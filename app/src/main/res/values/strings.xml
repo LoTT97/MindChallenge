@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MenuActivity!</string>
+    <string name="app_name">Mind Challenge</string>
+    <string name="level_one_description">All numbers are the same except one, find and tap the different one</string>
+    <string name="level">\u0020\u0020\u0020\u0020\u0020Level %s</string>
+    <string name="tap_to_continue">Tap To Continue</string>
+    <string name="level_score">Score: %s</string>
+    <string name="next_level">Next Level</string>
+    <string name="replay_level">Replay Level</string>
+    <string name="go_to_menu">Go To Menu</string>
+    <string name="congratulations">Congratulations!!!</string>
+    <string name="not_in_time">Time is up, try again</string>
+    <string name="wrong_button">Oopss, wrong button</string>
+    <string name="correct_button_low_score">You guessed it but you were too slow, try again</string>
+    <string name="score_limit">You need to score more than 50 in order to pass the level</string>
+    <string name="tab_title_main">Main</string>
+    <string name="tab_title_levels">All Levels</string>
+</resources>

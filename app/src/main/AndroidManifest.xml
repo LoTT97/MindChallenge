@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mindchallenge">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".levels.LevelOne"
+                android:label="LevelOne"
+                android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+        </activity>
+        <activity android:name=".levels.LevelTwo"
+            android:label="LevelTwo"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+
+        </activity>
+        <activity android:name=".levels.LevelThree"
+            android:label="LevelThree"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+        </activity>
+        <activity android:name=".levels.LevelFour"
+            android:label="LevelFour"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+
+        </activity>
+        <activity android:name=".levels.LevelFive"
+            android:label="LevelFive"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+
+        </activity>
+        <activity android:name=".PreLevelStart"
+            android:label="PreLevelStart"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mindchallenge.MainActivity" />
+
+        </activity>
+
+
+    </application>
+
+</manifest>

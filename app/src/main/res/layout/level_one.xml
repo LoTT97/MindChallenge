@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/level_one_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/background_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/levelOneTableLayout">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/levelOneTableRow1">
+
+            <Button
+                android:id="@+id/levelOneButton1-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton1-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton2-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton2-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton3-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton3-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton4-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton4-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton5-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton5-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton6-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton6-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton7-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton7-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton8-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton8-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/levelOneTableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton9-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton9-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton10-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton10-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton11-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton11-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton12-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton12-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton13-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton13-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton14-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton14-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton15-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton15-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelOneButton16-1"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-2"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-3"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-4"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-5"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-6"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-7"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-8"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelOneButton16-9"
+                android:background="@drawable/level_one_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "248895299218",
+    "firebase_url": "https://mind-challenge-bc385.firebaseio.com",
+    "project_id": "mind-challenge-bc385",
+    "storage_bucket": "mind-challenge-bc385.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248895299218:android:780ce4eb086192e7",
+        "android_client_info": {
+          "package_name": "com.example.mindchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248895299218-8ckep8u2ng27ei60k6k8npjoelshg0vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYZ2db_87MAE-yIK9H56I4AG6o2MB-BfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248895299218-8ckep8u2ng27ei60k6k8npjoelshg0vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

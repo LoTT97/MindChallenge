@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/level_two_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/background_main">
+
+
+    <ProgressBar
+        android:id="@+id/levelFiveProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"/><!--// 50 default progress value-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/levelTwoTableLayout"
+        android:layout_marginStart="3dp">
+
+        <TableRow
+            android:id="@+id/levelTwoTableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton1-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+            
+
+            <Button
+                android:id="@+id/levelTwoButton1-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton1-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton1-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton1-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton2-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton2-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton2-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton2-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton2-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton3-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton3-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton3-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton3-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton3-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton4-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton4-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton4-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton4-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton4-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton5-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton5-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton5-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton5-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton5-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/levelOneTableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/levelTwoButton6-1"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton6-2"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton6-3"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton6-4"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/levelTwoButton6-5"
+                android:background="@drawable/level_two_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:textSize="30sp"
+                tools:targetApi="lollipop" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
