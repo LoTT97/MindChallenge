@@ -1,8 +1,6 @@
 package com.example.mindchallenge.levels;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,14 +8,11 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TableRow;
-
 import com.example.mindchallenge.Database;
 import com.example.mindchallenge.PreLevelStart;
 import com.example.mindchallenge.R;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -35,8 +30,6 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
 
     int numRows = 6;
     int numColumns = 5;
-
-    String status;
     int round;
     int score;
 
@@ -47,7 +40,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.level_two);
 
         progressBar = findViewById(R.id.levelFiveProgressBar);
-
+        progressBar.setMax(3000);
         setProgressValue(0);
 
         database = new Database(getApplicationContext());
@@ -147,11 +140,11 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
             @Override
             public void run() {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                setProgressValue(progress + 10);
+                setProgressValue(progress + 1);
             }
         });
         thread.start();
