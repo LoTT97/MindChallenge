@@ -36,6 +36,8 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     int score;
     int maxBar;
 
+    boolean progressBarFinished;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
 
         progressBar = findViewById(R.id.levelFiveProgressBar);
         progressBar.setMax(maxBar);
+        progressBarFinished = false;
         setProgressValue(0);
 
         database = new Database(getApplicationContext());
@@ -94,38 +97,44 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
 
-        for (Button b : buttons) {
-            if (b.getText() == String.valueOf(buttonClickedNumber)) {
-                if (v.getId() == b.getId()) {
-                    b.setText("");
-                    if (buttonClickedNumber == buttonNumberDifference * 23 + 1) { // (6 rows * 4 columns - 1) * difference + 1 (because we start with 1) , it means it is the last number
-                        score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3.2;
-                        if (maxBar > 100) {
-                            maxBar = 100;
-                        }
-                        if (round == 3) {
-                            if (maxBar > 50) {
-                                if (database.getLastLevelUnlocked() < 6) {
-                                    database.unlockLevel(6);
+        if (!progressBarFinished) {
+            for (Button b : buttons) {
+                if (b.getText() == String.valueOf(buttonClickedNumber)) {
+                    if (v.getId() == b.getId()) {
+                        b.setText("");
+                        if (buttonClickedNumber == buttonNumberDifference * 23 + 1) { // (6 rows * 4 columns - 1) * difference + 1 (because we start with 1) , it means it is the last number
+                            if (maxBar > 0) {
+                                score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3;
+                                if (score > 100) {
+                                    score = 100;
                                 }
+                            } else {
+                                maxBar = 0;
                             }
-                            if(database.getScoreAtLevel(5) < score){
-                                database.updateScore(score,5);
-                            }
-                            startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
-                        } else {
-                            maxBar += 500;
-                            round++;
+                            if (round == 3) {
+                                if (maxBar > 50) {
+                                    if (database.getLastLevelUnlocked() < 6) {
+                                        database.unlockLevel(6);
+                                    }
+                                }
+                                if (database.getScoreAtLevel(5) < score) {
+                                    database.updateScore(score, 5);
+                                }
+                                startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
+                            } else {
+                                maxBar += 500;
+                                round++;
 
-                            startLevelFive(round, buttonNumberDifference + 1, maxBar);
+                                startLevelFive(round, buttonNumberDifference + 1, maxBar);
+                            }
                         }
+                        buttonClickedNumber = buttonClickedNumber + buttonNumberDifference;
+                    } else {
+                        startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
                     }
-                    buttonClickedNumber = buttonClickedNumber + buttonNumberDifference;
-                } else {
-                    startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
-                }
 
-                break;
+                    break;
+                }
             }
         }
     }
@@ -155,21 +164,32 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
 
     private void setProgressValue(final int progress) {
 
-        // set the progress
-        progressBar.setProgress(progress);
-        // thread is used to change the progress value
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                setProgressValue(progress + 1);
+        if (!progressBarFinished) {
+            // set the progress
+            progressBar.setProgress(progress);
+            if (progress == maxBar) {
+                progressBarFinished = true;
+                startPreLevel(getResources().getString(R.string.not_in_time), score, database.getLastLevelUnlocked());
             }
-        });
-        thread.start();
+            // thread is used to change the progress value
+            Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    setProgressValue(progress + 1);
+                }
+            });
+            thread.start();
+        }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
