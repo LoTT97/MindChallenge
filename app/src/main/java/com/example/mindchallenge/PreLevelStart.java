@@ -86,6 +86,7 @@ public class PreLevelStart extends AppCompatActivity {
                             intent = new Intent(PreLevelStart.this, LevelFive.class);
                             intent.putExtra("round", 1);
                             intent.putExtra("difference", 2);
+                            intent.putExtra("maxBar",3500);
                             startActivity(intent);
                             finish();
                             break;
@@ -301,6 +302,7 @@ public class PreLevelStart extends AppCompatActivity {
                         Intent intent = new Intent(PreLevelStart.this, LevelFive.class);
                         intent.putExtra("round", 1);
                         intent.putExtra("difference", 2);
+                        intent.putExtra("maxBar", 3500);
                         startActivity(intent);
                         finish();
                     }
@@ -338,6 +340,7 @@ public class PreLevelStart extends AppCompatActivity {
                     Intent intent = new Intent(PreLevelStart.this, LevelFive.class);
                     intent.putExtra("round", 1);
                     intent.putExtra("difference", 2);
+                    intent.putExtra("maxBar", 3500);
                     startActivity(intent);
                     finish();
                 }

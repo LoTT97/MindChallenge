@@ -108,24 +108,26 @@ public class LevelViewerAdapter extends RecyclerView.Adapter<LevelViewerAdapter.
             @Override
             public void onClick(View view) {
                 try {
+                    Intent intent;
                     switch (holder.getLayoutPosition()) {
+
                         case 0:
-                            Intent intent = new Intent(mContext, PreLevelStart.class);
+                            intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 1);
                             intent.putExtra("from", "main");
                             mContext.startActivity(intent);
                             break;
                         case 1:
-                            Intent intent1 = new Intent(mContext, PreLevelStart.class);
-                            intent1.putExtra("level", 2);
-                            intent1.putExtra("from", "main");
-                            mContext.startActivity(intent1);
+                            intent = new Intent(mContext, PreLevelStart.class);
+                            intent.putExtra("level", 2);
+                            intent.putExtra("from", "main");
+                            mContext.startActivity(intent);
                             break;
                         case 2:
-                            Intent intent2 = new Intent(mContext, PreLevelStart.class);
-                            intent2.putExtra("level", 3);
-                            intent2.putExtra("from", "main");
-                            mContext.startActivity(intent2);
+                            intent = new Intent(mContext, PreLevelStart.class);
+                            intent.putExtra("level", 3);
+                            intent.putExtra("from", "main");
+                            mContext.startActivity(intent);
                             break;
                         case 3:
                             intent = new Intent(mContext, PreLevelStart.class);
@@ -134,15 +136,9 @@ public class LevelViewerAdapter extends RecyclerView.Adapter<LevelViewerAdapter.
                             mContext.startActivity(intent);
                             break;
                         case 4:
-                            intent = new Intent(mContext, LevelFive.class);
-                            intent.putExtra("level", 4);
+                            intent = new Intent(mContext, PreLevelStart.class);
+                            intent.putExtra("level", 5);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
-                            break;
-                        case 5:
-                            intent = new Intent(mContext, LevelFive.class);
-                            intent.putExtra("round", 1);
-                            intent.putExtra("difference", 2);
                             mContext.startActivity(intent);
                             break;
                         default:

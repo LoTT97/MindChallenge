@@ -10,9 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TableRow;
+
 import com.example.mindchallenge.Database;
 import com.example.mindchallenge.PreLevelStart;
 import com.example.mindchallenge.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -32,6 +34,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     int numColumns = 5;
     int round;
     int score;
+    int maxBar;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -39,8 +42,13 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.level_two);
 
+        buttonNumberDifference = Objects.requireNonNull(getIntent().getExtras()).getInt("difference");
+        round = Objects.requireNonNull(getIntent().getExtras()).getInt("round");
+        maxBar = Objects.requireNonNull(getIntent().getExtras()).getInt("maxBar");
+
+
         progressBar = findViewById(R.id.levelFiveProgressBar);
-        progressBar.setMax(3000);
+        progressBar.setMax(maxBar);
         setProgressValue(0);
 
         database = new Database(getApplicationContext());
@@ -48,12 +56,10 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         duplicateButtons = new ArrayList<>();
         score = 0;
         buttonClickedNumber = 1;
-        buttonNumberDifference = Objects.requireNonNull(getIntent().getExtras()).getInt("difference");
-        round = Objects.requireNonNull(getIntent().getExtras()).getInt("round");
 
 
         TableRow.LayoutParams params = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
-        params.height = 225;
+        params.height = 214;
         params.width = 175;
 
         for (int i = 0; i < numRows; i++) {
@@ -92,12 +98,26 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
             if (b.getText() == String.valueOf(buttonClickedNumber)) {
                 if (v.getId() == b.getId()) {
                     b.setText("");
-                    if (buttonClickedNumber == buttonNumberDifference * 29 + 1) {
+                    if (buttonClickedNumber == buttonNumberDifference * 23 + 1) { // (6 rows * 4 columns - 1) * difference + 1 (because we start with 1) , it means it is the last number
+                        score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3.2;
+                        if (maxBar > 100) {
+                            maxBar = 100;
+                        }
                         if (round == 3) {
+                            if (maxBar > 50) {
+                                if (database.getLastLevelUnlocked() < 6) {
+                                    database.unlockLevel(6);
+                                }
+                            }
+                            if(database.getScoreAtLevel(5) < score){
+                                database.updateScore(score,5);
+                            }
                             startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
                         } else {
+                            maxBar += 500;
                             round++;
-                            startLevelFive(round, buttonNumberDifference + 1);
+
+                            startLevelFive(round, buttonNumberDifference + 1, maxBar);
                         }
                     }
                     buttonClickedNumber = buttonClickedNumber + buttonNumberDifference;
@@ -110,11 +130,12 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         }
     }
 
-    private void startLevelFive(int r, int dif) {
+    private void startLevelFive(int r, int dif, int maxB) {
 
         Intent intent = new Intent(getApplicationContext(), LevelFive.class);
         intent.putExtra("round", r);
         intent.putExtra("difference", dif);
+        intent.putExtra("maxBar", maxB);
         startActivity(intent);
         finish();
 
@@ -131,6 +152,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         startActivity(intent);
         finish();
     }
+
     private void setProgressValue(final int progress) {
 
         // set the progress

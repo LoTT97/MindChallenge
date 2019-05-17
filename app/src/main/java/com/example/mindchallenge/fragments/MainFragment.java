@@ -59,10 +59,6 @@ public class MainFragment extends Fragment {
                 Intent intent = new Intent(getContext(), PreLevelStart.class);
                 intent.putExtra("level",lastLevelUnlocked);
                 intent.putExtra("from","main");
-                intent.putExtra("round",4);
-                intent.putExtra("level5round",1);
-                intent.putExtra("difference",2);
-                intent.putExtra("firstPart", true);
                 intent.putExtra("score", 0);
                 startActivity(intent);
             }

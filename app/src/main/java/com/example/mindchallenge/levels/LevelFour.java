@@ -27,7 +27,6 @@ import java.util.Random;
 
 public class LevelFour extends AppCompatActivity implements View.OnClickListener {
 
-
     Database database;
     Button[] buttons;
     TextView statementTextView;
@@ -137,6 +136,7 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
     public void onBackPressed() {
         super.onBackPressed();
         downTimer.cancel();
+        finish();
     }
 
     private void startPreLevel(String status, int s, int lastLevel) {
@@ -167,66 +167,67 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onClick(View v) {
+        if (!clicked) {
+            clicked = true;
+            if (!timerFinished) {
+                if (v.getId() == buttons[correctButton].getId()) {
 
-        clicked = true;
-        if (!timerFinished) {
-            if (v.getId() == buttons[correctButton].getId()) {
+                    if (tapDontTap == 0) {
+                        if (!firstPart && round >= 7) {
+                            if (database.getLastLevelUnlocked() < 5) {
+                                database.unlockLevel(5);
+                            }
+                            score = 100;
+                            startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
 
-                if (tapDontTap == 0) {
-                    if (!firstPart && round >= 7) {
-                        if (database.getLastLevelUnlocked() < 5) {
-                            database.unlockLevel(5);
+                        } else {
+                            score += 12;
+                            startLevelFour(round, firstPart, score);
                         }
-                        score = 100;
-                        startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
 
                     } else {
-                        score += 12;
-                        startLevelFour(round, firstPart, score);
+                        ScaleAnimation buttonAnim = new ScaleAnimation(1, 1.2f, 1, 1.2f);
+                        buttonAnim.setDuration(3200);
+                        buttons[correctButton].startAnimation(buttonAnim);
+                        new Handler().postDelayed(new Runnable() {
+                            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+                            @Override
+                            public void run() {
+                                startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
+                            }
+                        }, 2000);
+
                     }
-
                 } else {
-                    ScaleAnimation buttonAnim = new ScaleAnimation(1, 1.2f, 1, 1.2f);
-                    buttonAnim.setDuration(3200);
-                    buttons[correctButton].startAnimation(buttonAnim);
-                    new Handler().postDelayed(new Runnable() {
-                        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-                        @Override
-                        public void run() {
-                            startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
-                        }
-                    }, 2000);
 
-                }
-            } else {
-
-                if (tapDontTap == 0) {
-                    ScaleAnimation buttonAnim = new ScaleAnimation(1, 1.2f, 1, 1.2f);
-                    buttonAnim.setDuration(3200);
-                    buttons[correctButton].startAnimation(buttonAnim);
-                    new Handler().postDelayed(new Runnable() {
-                        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-                        @Override
-                        public void run() {
-                            startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
-                        }
-                    }, 2000);
-                } else {
-                    if (!firstPart && round >= 11) {
-                        if (database.getLastLevelUnlocked() < 5) {
-                            database.unlockLevel(5);
-                        }
-                        score = 100;
-                        startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
-
-
+                    if (tapDontTap == 0) {
+                        ScaleAnimation buttonAnim = new ScaleAnimation(1, 1.2f, 1, 1.2f);
+                        buttonAnim.setDuration(3200);
+                        buttons[correctButton].startAnimation(buttonAnim);
+                        new Handler().postDelayed(new Runnable() {
+                            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+                            @Override
+                            public void run() {
+                                startPreLevel(getResources().getString(R.string.wrong_button), score, database.getLastLevelUnlocked());
+                            }
+                        }, 2000);
                     } else {
-                        score += 12;
-                        startLevelFour(round, firstPart, score);
+                        if (!firstPart && round >= 11) {
+                            if (database.getLastLevelUnlocked() < 5) {
+                                database.unlockLevel(5);
+                            }
+                            score = 100;
+                            startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
+
+
+                        } else {
+                            score += 12;
+                            startLevelFour(round, firstPart, score);
+                        }
                     }
                 }
+
             }
-
         }
     }
 
@@ -283,7 +284,7 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
 
     public void startTimer(final TextView textView, final int seconds) {
 
-         downTimer = new CountDownTimer(1000 * seconds, 1000) {
+        downTimer = new CountDownTimer(1000 * seconds, 1000) {
 
             public void onTick(long millisUntilFinished) {
 
