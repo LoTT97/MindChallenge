@@ -38,6 +38,8 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
 
     boolean progressBarFinished;
 
+    Thread thread;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -102,6 +104,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
                 if (b.getText() == String.valueOf(buttonClickedNumber)) {
                     if (v.getId() == b.getId()) {
                         b.setText("");
+                        b.setEnabled(false);
                         if (buttonClickedNumber == buttonNumberDifference * 23 + 1) { // (6 rows * 4 columns - 1) * difference + 1 (because we start with 1) , it means it is the last number
                             if (maxBar > 0) {
                                 score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3;
@@ -109,7 +112,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
                                     score = 100;
                                 }
                             } else {
-                                maxBar = 0;
+                                score = 0;
                             }
                             if (round == 3) {
                                 if (maxBar > 50) {
@@ -140,7 +143,8 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     }
 
     private void startLevelFive(int r, int dif, int maxB) {
-
+        thread.interrupt();
+        progressBarFinished = true;
         Intent intent = new Intent(getApplicationContext(), LevelFive.class);
         intent.putExtra("round", r);
         intent.putExtra("difference", dif);
@@ -151,7 +155,8 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     }
 
     private void startPreLevel(String stat, int s, int lastLevel) {
-
+        thread.interrupt();
+        progressBarFinished = true;
         Intent intent = new Intent(getApplicationContext(), PreLevelStart.class);
         intent.putExtra("from", "5");
         intent.putExtra("level", 5);
@@ -167,12 +172,9 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         if (!progressBarFinished) {
             // set the progress
             progressBar.setProgress(progress);
-            if (progress == maxBar) {
-                progressBarFinished = true;
-                startPreLevel(getResources().getString(R.string.not_in_time), score, database.getLastLevelUnlocked());
-            }
+
             // thread is used to change the progress value
-            Thread thread = new Thread(new Runnable() {
+            thread = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     try {
@@ -183,13 +185,21 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
                     setProgressValue(progress + 1);
                 }
             });
-            thread.start();
+            if (progress >= maxBar) {
+                thread.interrupt();
+                progressBarFinished = true;
+                startPreLevel(getResources().getString(R.string.not_in_time), score, database.getLastLevelUnlocked());
+            }else{
+                thread.start();
+            }
+
         }
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        thread.interrupt();
         finish();
     }
 }
