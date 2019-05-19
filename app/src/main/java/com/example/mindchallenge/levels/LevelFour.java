@@ -1,8 +1,6 @@
 package com.example.mindchallenge.levels;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -11,12 +9,10 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.example.mindchallenge.Database;
 import com.example.mindchallenge.PreLevelStart;
 import com.example.mindchallenge.R;
@@ -81,7 +77,6 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
         }
 
         if (firstPart) {
-
 
             statementDifficulty = 1;
             tapDontTap = 0;
@@ -178,10 +173,13 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
                                 database.unlockLevel(5);
                             }
                             score = 100;
+                            if(database.getScoreAtLevel(4)<score){
+                                database.updateScore(score,4);
+                            }
                             startPreLevel(getResources().getString(R.string.congratulations), score, database.getLastLevelUnlocked());
 
                         } else {
-                            score += 12;
+                            score += 6;
                             startLevelFour(round, firstPart, score);
                         }
 

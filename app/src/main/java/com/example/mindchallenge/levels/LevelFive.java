@@ -107,7 +107,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
                         b.setEnabled(false);
                         if (buttonClickedNumber == buttonNumberDifference * 23 + 1) { // (6 rows * 4 columns - 1) * difference + 1 (because we start with 1) , it means it is the last number
                             if (maxBar > 0) {
-                                score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3;
+                                score += ((100 * (maxBar - progressBar.getProgress())) / maxBar) * 3.2;
                                 if (score > 100) {
                                     score = 100;
                                 }
