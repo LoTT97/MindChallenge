@@ -3,6 +3,10 @@
     <string name="hello">Hello World, MenuActivity!</string>
     <string name="app_name">Mind Challenge</string>
     <string name="level_one_description">All numbers are the same except one, find and tap the different one</string>
+    <string name="level_two_description">Memorize the colored cards and then click them respectively</string>
+    <string name="level_three_description">Find the correct answer. You only have a minute</string>
+    <string name="level_four_description">Click the button according to the given statement</string>
+    <string name="level_five_description">Click the numbers in ascending order starting from 1. The gap between numberes will change from 2 to 4 in 3 rounds </string>
     <string name="level">\u0020\u0020\u0020\u0020\u0020Level %s</string>
     <string name="tap_to_continue">Tap To Continue</string>
     <string name="level_score">Score: %s</string>

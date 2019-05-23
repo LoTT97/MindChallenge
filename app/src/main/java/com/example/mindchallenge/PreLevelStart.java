@@ -50,6 +50,35 @@ public class PreLevelStart extends AppCompatActivity {
         continueButton = findViewById(R.id.preLevelTapToPlayButton);
         clickable = true;
 
+        levelTextView = findViewById(R.id.preLevelTextView);
+        tapToContinueTextView = findViewById(R.id.preLevelTapToContinueTextView);
+        descriptionTextView = findViewById(R.id.preLevelDescriptionTextView);
+        currentScoreTextView = findViewById(R.id.preLevelCurrentScoreTextView);
+        homeButton = findViewById(R.id.preLevelHomeButton);
+        replayButton = findViewById(R.id.preLevelReplayButton);
+        nextLevelButton = findViewById(R.id.preLevelNextLevelButton);
+        linearLayout = findViewById(R.id.preLevelButtonsLinearLayout);
+
+        switch(level){
+            case 1:
+                descriptionTextView.setText(getResources().getString(R.string.level_one_description));
+                break;
+            case 2:
+                descriptionTextView.setText(getResources().getString(R.string.level_two_description));
+                break;
+            case 3:
+                descriptionTextView.setText(getResources().getString(R.string.level_three_description));
+                break;
+            case 4:
+                descriptionTextView.setText(getResources().getString(R.string.level_four_description));
+                break;
+            case 5:
+                descriptionTextView.setText(getResources().getString(R.string.level_five_description));
+                break;
+            default:
+                finish();
+                break;
+        }
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,23 +87,27 @@ public class PreLevelStart extends AppCompatActivity {
                     Intent intent;
                     switch (level) {
                         case 1:
+                            descriptionTextView.setText(getResources().getString(R.string.level_one_description));
                             intent = new Intent(PreLevelStart.this, LevelOne.class);
                             startActivity(intent);
                             finish();
                             break;
                         case 2:
+                            descriptionTextView.setText(getResources().getString(R.string.level_two_description));
                             intent = new Intent(PreLevelStart.this, LevelTwo.class);
                             intent.putExtra("from", "main");
                             startActivity(intent);
                             finish();
                             break;
                         case 3:
+                            descriptionTextView.setText(getResources().getString(R.string.level_three_description));
                             intent = new Intent(PreLevelStart.this, LevelThree.class);
                             intent.putExtra("from", "main");
                             startActivity(intent);
                             finish();
                             break;
                         case 4:
+                            descriptionTextView.setText(getResources().getString(R.string.level_four_description));
                             intent = new Intent(PreLevelStart.this, LevelFour.class);
                             intent.putExtra("round", 1);
                             intent.putExtra("firstPart", true);
@@ -83,6 +116,7 @@ public class PreLevelStart extends AppCompatActivity {
                             finish();
                             break;
                         case 5:
+                            descriptionTextView.setText(getResources().getString(R.string.level_five_description));
                             intent = new Intent(PreLevelStart.this, LevelFive.class);
                             intent.putExtra("round", 1);
                             intent.putExtra("difference", 2);
@@ -97,18 +131,10 @@ public class PreLevelStart extends AppCompatActivity {
                 }
             }
         });
-        levelTextView = findViewById(R.id.preLevelTextView);
-        tapToContinueTextView = findViewById(R.id.preLevelTapToContinueTextView);
-        descriptionTextView = findViewById(R.id.preLevelDescriptionTextView);
-        currentScoreTextView = findViewById(R.id.preLevelCurrentScoreTextView);
-        homeButton = findViewById(R.id.preLevelHomeButton);
-        replayButton = findViewById(R.id.preLevelReplayButton);
-        nextLevelButton = findViewById(R.id.preLevelNextLevelButton);
-        linearLayout = findViewById(R.id.preLevelButtonsLinearLayout);
+
 
         if (from.equals("main")) {
             levelTextView.setText(String.format(getResources().getString(R.string.level), String.valueOf(level)));
-            descriptionTextView.setText(getResources().getString(R.string.level_one_description));
             currentScoreTextView.setVisibility(View.INVISIBLE);
             linearLayout.setVisibility(View.INVISIBLE);
             homeButton.setVisibility(View.INVISIBLE);
