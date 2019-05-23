@@ -97,7 +97,7 @@ public class LevelViewerAdapter extends RecyclerView.Adapter<LevelViewerAdapter.
                 holder.imageView.setPadding(16, 0, 0, 0);
                 break;
             case 4:
-                holder.imageView.setImageResource(R.mipmap.preview_level_two);
+                holder.imageView.setImageResource(R.mipmap.preview_level_five);
                 holder.imageView.setPadding(16, 0, 0, 0);
                 break;
             default:
@@ -108,42 +108,42 @@ public class LevelViewerAdapter extends RecyclerView.Adapter<LevelViewerAdapter.
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent;
+                    Intent intent = null;
                     switch (holder.getLayoutPosition()) {
 
                         case 0:
                             intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 1);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
                             break;
                         case 1:
                             intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 2);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
                             break;
                         case 2:
                             intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 3);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
                             break;
                         case 3:
                             intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 4);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
                             break;
                         case 4:
                             intent = new Intent(mContext, PreLevelStart.class);
                             intent.putExtra("level", 5);
                             intent.putExtra("from", "main");
-                            mContext.startActivity(intent);
                             break;
                         default:
                             break;
                     }
+                    if(intent != null) {
+                        if(holder.getLayoutPosition() < lastUnclokedLevel)
+                            mContext.startActivity(intent);
+                    }
+
 
                 } catch (Exception e) {
                     Log.e(LOG_TAG, "exception", e);

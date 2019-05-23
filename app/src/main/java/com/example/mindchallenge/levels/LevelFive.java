@@ -199,6 +199,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        progressBarFinished = true;
         thread.interrupt();
         finish();
     }
