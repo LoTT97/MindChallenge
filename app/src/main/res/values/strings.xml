@@ -6,7 +6,7 @@
     <string name="level_two_description">Memorize the colored cards and then click them respectively</string>
     <string name="level_three_description">Find the correct answer. You only have a minute</string>
     <string name="level_four_description">Click the button according to the given statement</string>
-    <string name="level_five_description">Click the numbers in ascending order starting from 1. The gap between numberes will change from 2 to 4 in 3 rounds </string>
+    <string name="level_five_description">Click the numbers in ascending order starting from 1. The gap between numbers will change from 2 to 4 in 3 rounds </string>
     <string name="level">\u0020\u0020\u0020\u0020\u0020Level %s</string>
     <string name="tap_to_continue">Tap To Continue</string>
     <string name="level_score">Score: %s</string>
@@ -15,9 +15,20 @@
     <string name="go_to_menu">Go To Menu</string>
     <string name="congratulations">Congratulations!!!</string>
     <string name="not_in_time">Time is up, try again</string>
-    <string name="wrong_button">Oopss, wrong button</string>
+    <string name="wrong_button">Oops, wrong button</string>
     <string name="correct_button_low_score">You guessed it but you were too slow, try again</string>
     <string name="score_limit">You need to score more than 50 in order to pass the level</string>
     <string name="tab_title_main">Main</string>
     <string name="tab_title_levels">All Levels</string>
+    <string name="reset_score">RESET DATA</string>
+    <string name="language">Language</string>
+    <string name="data_got_reset">Data got reset</string>
+    <string name="lan_english">English</string>
+    <string name="lan_german">German</string>
+    <string name="lan_spanish">Spanish</string>
+    <string name="lan_french">French</string>
+    <string name="lan_italian">Italian</string>
+    <string name="lan_albanian">Albanian</string>
+    <string name="lan_change">Language got changed, restart the application</string>
+    <string name="next_level_not_unlocked">Not Unlocked</string>
 </resources>

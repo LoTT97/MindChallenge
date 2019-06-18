@@ -117,7 +117,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
                             if (round == 3) {
                                 if (maxBar > 50) {
                                     if (database.getLastLevelUnlocked() < 6) {
-                                        database.unlockLevel(6);
+                                       // database.unlockLevel(6);
                                     }
                                 }
                                 if (database.getScoreAtLevel(5) < score) {
@@ -150,6 +150,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         intent.putExtra("difference", dif);
         intent.putExtra("maxBar", maxB);
         startActivity(intent);
+        database.close();
         finish();
 
     }
@@ -164,6 +165,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         intent.putExtra("score", s);
         intent.putExtra("lastLevel", lastLevel);
         startActivity(intent);
+        database.close();
         finish();
     }
 
@@ -201,6 +203,7 @@ public class LevelFive extends AppCompatActivity implements View.OnClickListener
         super.onBackPressed();
         progressBarFinished = true;
         thread.interrupt();
+        database.close();
         finish();
     }
 }

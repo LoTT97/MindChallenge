@@ -15,21 +15,20 @@ public class MainActivity extends AppCompatActivity{
 
     PagerSlidingTabStrip tabs;
     ViewPager pager;
-
+    MyAdapter adapter;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-       pager = findViewById(R.id.pager);
-       pager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-       tabs = findViewById(R.id.tabs);
-       tabs.setViewPager(pager);
+        adapter = new MyAdapter(getSupportFragmentManager());
+        pager = findViewById(R.id.pager);
+        pager.setAdapter(adapter);
+        tabs = findViewById(R.id.tabs);
+        tabs.setViewPager(pager);
 
 
     }
-
     public class MyAdapter extends FragmentPagerAdapter{
 
         public String[] titles = {getString(R.string.tab_title_main),getString(R.string.tab_title_levels)};

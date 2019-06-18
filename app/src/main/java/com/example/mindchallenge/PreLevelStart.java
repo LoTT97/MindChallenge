@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mindchallenge.levels.LevelFive;
 import com.example.mindchallenge.levels.LevelFour;
@@ -59,7 +60,7 @@ public class PreLevelStart extends AppCompatActivity {
         nextLevelButton = findViewById(R.id.preLevelNextLevelButton);
         linearLayout = findViewById(R.id.preLevelButtonsLinearLayout);
 
-        switch(level){
+        switch (level) {
             case 1:
                 descriptionTextView.setText(getResources().getString(R.string.level_one_description));
                 break;
@@ -120,7 +121,7 @@ public class PreLevelStart extends AppCompatActivity {
                             intent = new Intent(PreLevelStart.this, LevelFive.class);
                             intent.putExtra("round", 1);
                             intent.putExtra("difference", 2);
-                            intent.putExtra("maxBar",3500);
+                            intent.putExtra("maxBar", 3500);
                             startActivity(intent);
                             finish();
                             break;
@@ -176,19 +177,21 @@ public class PreLevelStart extends AppCompatActivity {
                     finish();
                 }
             });
-            if ((getIntent().getExtras().getInt("lastLevel")) > level) {
-                nextLevelButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+
+            nextLevelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if ((getIntent().getExtras().getInt("lastLevel")) > level) {
                         Intent intent = new Intent(PreLevelStart.this, LevelTwo.class);
                         intent.putExtra("from", "main");
                         startActivity(intent);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(),getString(R.string.next_level_not_unlocked),Toast.LENGTH_SHORT).show();
                     }
-                });
-            } else {
-                nextLevelButton.setEnabled(false);
-            }
+                }
+            });
+
         } else if (from.equals("2")) {
             score = getIntent().getExtras().getInt("score");
             status = Objects.requireNonNull(getIntent().getExtras().getString("status"));
@@ -222,19 +225,19 @@ public class PreLevelStart extends AppCompatActivity {
                 }
             });
 
-            if ((getIntent().getExtras().getInt("lastLevel")) > level) {
-                nextLevelButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+            nextLevelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if ((getIntent().getExtras().getInt("lastLevel")) > level) {
                         Intent intent = new Intent(PreLevelStart.this, LevelThree.class);
                         intent.putExtra("from", "main");
                         startActivity(intent);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(),getString(R.string.next_level_not_unlocked),Toast.LENGTH_SHORT).show();
                     }
-                });
-            } else {
-                nextLevelButton.setEnabled(false);
-            }
+                }
+            });
         } else if (from.equals("3")) {
             score = getIntent().getExtras().getInt("score");
             status = Objects.requireNonNull(getIntent().getExtras().getString("status"));
@@ -269,23 +272,22 @@ public class PreLevelStart extends AppCompatActivity {
                 }
             });
 
-            if ((getIntent().getExtras().getInt("lastLevel")) > level) {
-                nextLevelButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(getApplicationContext(), LevelFour.class);
+            nextLevelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if ((getIntent().getExtras().getInt("lastLevel")) > level) {
+                        Intent intent = new Intent(PreLevelStart.this, LevelFour.class);
                         intent.putExtra("round", 1);
                         intent.putExtra("firstPart", true);
                         intent.putExtra("score", 0);
                         startActivity(intent);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(),getString(R.string.next_level_not_unlocked),Toast.LENGTH_SHORT).show();
                     }
-                });
-            } else {
-                nextLevelButton.setEnabled(false);
-            }
-        }
-        else if (from.equals("4")) {
+                }
+            });
+        } else if (from.equals("4")) {
             score = getIntent().getExtras().getInt("score");
             status = Objects.requireNonNull(getIntent().getExtras().getString("status"));
             descriptionTextView.setText(getResources().getString(R.string.score_limit));
@@ -320,24 +322,22 @@ public class PreLevelStart extends AppCompatActivity {
                 }
             });
 
-            if ((getIntent().getExtras().getInt("lastLevel")) > level) {
-                nextLevelButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
+            nextLevelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if ((getIntent().getExtras().getInt("lastLevel")) > level) {
                         Intent intent = new Intent(PreLevelStart.this, LevelFive.class);
                         intent.putExtra("round", 1);
                         intent.putExtra("difference", 2);
                         intent.putExtra("maxBar", 3500);
                         startActivity(intent);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(),getString(R.string.next_level_not_unlocked),Toast.LENGTH_SHORT).show();
                     }
-                });
-            } else {
-                nextLevelButton.setEnabled(false);
-            }
-        }
-        else if (from.equals("5")) {
+                }
+            });
+        } else if (from.equals("5")) {
             score = getIntent().getExtras().getInt("score");
             status = Objects.requireNonNull(getIntent().getExtras().getString("status"));
             descriptionTextView.setText(getResources().getString(R.string.score_limit));
@@ -371,6 +371,7 @@ public class PreLevelStart extends AppCompatActivity {
                     finish();
                 }
             });
+
 
             if ((getIntent().getExtras().getInt("lastLevel")) > level) {
                 nextLevelButton.setOnClickListener(new View.OnClickListener() {

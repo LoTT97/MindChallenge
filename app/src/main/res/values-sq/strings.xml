@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MenuActivity!</string>
+    <string name="app_name">Mind Challenge</string>
+    <string name="level_one_description">Të gjithë numrat janë të njëjtë me përjashtim të një, gjeni dhe shtypeni një tjetër</string>
+    <string name="level_two_description">Mbani mend kartat me ngjyrë dhe pastaj klikoni ato përkatësisht</string>
+    <string name="level_three_description">Gjeni përgjigjen e saktë. Ju keni vetëm një minutë</string>
+    <string name="level_four_description">Klikoni butonin sipas deklaratës së dhënë</string>
+    <string name="level_five_description">Kliko numrat në renditje duke filluar nga 1. Dallimi mes numrave do të ndryshojë nga 2 në 4 në 3 raunde</string>
+    <string name="level">\u0020\u0020\u0020\u0020\u0020Niveli %s</string>
+    <string name="tap_to_continue">Shtypeni per te vazhduar</string>
+    <string name="level_score">Rezultati: %s</string>
+    <string name="next_level">Niveli tjetër</string>
+    <string name="replay_level">Riluani nivelin</string>
+    <string name="go_to_menu">Dilni ne menu</string>
+    <string name="congratulations">Urime!!!</string>
+    <string name="not_in_time">Koha mbaroi, provo përsëri</string>
+    <string name="wrong_button">Oops, buton i gabuar</string>
+    <string name="correct_button_low_score">E keni gjetur atë, por keni qenë shumë i ngadalshëm, provoni përsëri</string>
+    <string name="score_limit">Ju duhet të shënoni më shumë se 50 në mënyrë që të kaloni nivelin</string>
+    <string name="tab_title_main">Main</string>
+    <string name="tab_title_levels">Të gjitha nivelet</string>
+    <string name="reset_score">Rivendos të dhënat</string>
+    <string name="language">Gjuha</string>
+    <string name="data_got_reset">Të dhënat u rivendosën</string>
+    <string name="lan_english">Anglisht</string>
+    <string name="lan_german">Gjermanisht</string>
+    <string name="lan_spanish">Spanjollisht</string>
+    <string name="lan_french">Frengjisht</string>
+    <string name="lan_italian">Italisht</string>
+    <string name="lan_albanian">Shqip</string>
+    <string name="lan_change">Gjuha u ndryshua, rifilloni aplikacionin</string>
+    <string name="next_level_not_unlocked">Nuk eshte i hapur</string>
+</resources>

@@ -122,7 +122,15 @@ public class Database extends SQLiteOpenHelper {
 
         db.update(DbItem.TableName, cv, DbItem.LEVEL_COLUMN + " = " + level, null);
     }
+    public void resetData(){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(DbItem.SCORE_COLUMN, 0);
+        cv.put(DbItem.LEVEL_UNLOCKED_COLUMN, 0);
 
+        db.update(DbItem.TableName, cv, null,null);
+        unlockLevel(1);
+    }
     public int getFullScore() {
         SQLiteDatabase db = getReadableDatabase();
         int score = 0;

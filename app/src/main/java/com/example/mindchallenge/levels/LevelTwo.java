@@ -102,7 +102,8 @@ public class LevelTwo extends AppCompatActivity implements View.OnClickListener 
                 memoryDepth = 6;
                 break;
             default:
-                finish();
+                database.close();
+        finish();
                 break;
         }
         rows = new int[memoryDepth];
@@ -187,7 +188,8 @@ public class LevelTwo extends AppCompatActivity implements View.OnClickListener 
                                     Intent intent1 = new Intent(getApplicationContext(), LevelTwo.class);
                                     intent1.putExtra("from", "2");
                                     startActivity(intent1);
-                                    finish();
+                                    database.close();
+        finish();
                                     break;
                                 case "2":
                                     score = 100;
@@ -204,7 +206,8 @@ public class LevelTwo extends AppCompatActivity implements View.OnClickListener 
                                     intent.putExtra("score", score);
                                     intent.putExtra("lastLevel", database.getLastLevelUnlocked());
                                     startActivity(intent);
-                                    finish();
+                                    database.close();
+        finish();
                                     break;
                                 case "main":
                                     score = 33;
@@ -214,9 +217,11 @@ public class LevelTwo extends AppCompatActivity implements View.OnClickListener 
                                     Intent intent2 = new Intent(getApplicationContext(), LevelTwo.class);
                                     intent2.putExtra("from", "1");
                                     startActivity(intent2);
-                                    finish();
+                                    database.close();
+        finish();
                                 default:
-                                    finish();
+                                    database.close();
+        finish();
                                     break;
                             }
                         }
@@ -237,7 +242,8 @@ public class LevelTwo extends AppCompatActivity implements View.OnClickListener 
                         intent.putExtra("score", score);
                         intent.putExtra("lastLevel", database.getLastLevelUnlocked());
                         startActivity(intent);
-                        finish();
+                        database.close();
+        finish();
                     }
 
                 }, 2000);

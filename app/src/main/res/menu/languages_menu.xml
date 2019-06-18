@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:id="@+id/english"
+     android:titleCondensed="english"
+     android:title="@string/lan_english"
+     />
+ <item
+     android:id="@+id/german"
+     android:titleCondensed="german"
+     android:title="@string/lan_german"
+     />
+ <item
+     android:id="@+id/spanish"
+     android:titleCondensed="spanish"
+     android:title="@string/lan_spanish"
+     />
+ <item
+     android:id="@+id/french"
+     android:titleCondensed="french"
+     android:title="@string/lan_french"
+     />
+ <item
+     android:id="@+id/italian"
+     android:titleCondensed="italian"
+     android:title="@string/lan_italian"
+     />
+ <item
+     android:id="@+id/albanian"
+     android:titleCondensed="albanian"
+     android:title="@string/lan_albanian"
+     />
+</menu>

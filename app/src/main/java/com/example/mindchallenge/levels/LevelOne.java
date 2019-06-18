@@ -100,7 +100,8 @@ public class LevelOne extends AppCompatActivity implements View.OnClickListener 
                                 intent.putExtra("score", score);
                                 intent.putExtra("lastLevel", database.getLastLevelUnlocked());
                                 startActivity(intent);
-                                finish();
+                                database.close();
+        finish();
                             }
                         }, 3000);
                     }
@@ -175,7 +176,8 @@ public class LevelOne extends AppCompatActivity implements View.OnClickListener 
                 counterTimer.cancel();
 
                 startActivity(intent);
-                finish();
+                database.close();
+        finish();
             } else {
 
                 buttons[row - 1][column - 1].setBackground(getDrawable(R.drawable.level_wrong_button));
@@ -193,7 +195,8 @@ public class LevelOne extends AppCompatActivity implements View.OnClickListener 
                             intent.putExtra("status", getResources().getString(R.string.wrong_button));
                             intent.putExtra("lastLevel", database.getLastLevelUnlocked());
                             startActivity(intent);
-                            finish();
+                            database.close();
+        finish();
                         }
                     }, 2000);
                 }

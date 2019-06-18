@@ -261,6 +261,7 @@ public class LevelThree extends AppCompatActivity implements View.OnClickListene
         intent.putExtra("score", s);
         intent.putExtra("lastLevel", lastLevel);
         startActivity(intent);
+        database.close();
         finish();
     }
 
@@ -280,6 +281,7 @@ public class LevelThree extends AppCompatActivity implements View.OnClickListene
         intent.putExtra("seconds", seconds);
         intent.putExtra("score", score);
         startActivity(intent);
+        database.close();
         finish();
     }
 

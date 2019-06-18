@@ -118,7 +118,8 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
             }
         } else {
             downTimer.cancel();
-            finish();
+            database.close();
+        finish();
         }
 
         //timer
@@ -131,6 +132,7 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
     public void onBackPressed() {
         super.onBackPressed();
         downTimer.cancel();
+        database.close();
         finish();
     }
 
@@ -144,6 +146,7 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
         intent.putExtra("score", s);
         intent.putExtra("lastLevel", lastLevel);
         startActivity(intent);
+        database.close();
         finish();
     }
 
@@ -156,6 +159,7 @@ public class LevelFour extends AppCompatActivity implements View.OnClickListener
         intent.putExtra("score", s);
         intent.putExtra("seconds", secondsUntilGameOver);
         startActivity(intent);
+        database.close();
         finish();
     }
 

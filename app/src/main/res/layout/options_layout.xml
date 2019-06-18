@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:layout_marginTop="380dp"
+    android:layout_marginLeft="70dp"
+    android:layout_marginStart="70dp"
+    android:id="@+id/optionsRelativeLayout">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:id="@+id/optionsCardView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/optionsLinearLayout">
+
+            <Button
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/optionsTabButton"/>
+
+            <Button
+                android:id="@+id/resetScoreButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_score"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="visible"
+                android:textSize="20sp"
+                android:background="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/languageButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="visible"
+                android:textSize="20sp"
+                android:background="@color/colorWhite"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

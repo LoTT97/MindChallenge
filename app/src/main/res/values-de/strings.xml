@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MenuActivity!</string>
+    <string name="app_name">Mind Challenge</string>
+    <string name="level_one_description">Alle Zahlen bis auf eine sind gleich. Suchen Sie die andere und tippen Sie darauf</string>
+    <string name="level_two_description">Merke dir die farbigen Karten und klicke sie an</string>
+    <string name="level_three_description">Finde die richtige Antwort. Sie haben nur eine Minute</string>
+    <string name="level_four_description">Klicken Sie auf die Schaltfläche gemäß der angegebenen Anweisung</string>
+    <string name="level_five_description">Klicken Sie auf die Zahlen in aufsteigender Reihenfolge ab 1. Die Lücke zwischen den Zahlen ändert sich in 3 Runden von 2 auf 4</string>
+    <string name="level">\u0020\u0020\u0020\u0020\u0020Niveau %s</string>
+    <string name="tap_to_continue">Tippen Sie, um fortzufahren</string>
+    <string name="level_score">Ergebnis: %s</string>
+    <string name="next_level">Nächste Ebene</string>
+    <string name="replay_level">Wiederholungsebene</string>
+    <string name="go_to_menu">Gehe zum Menü</string>
+    <string name="congratulations">Herzliche Glückwünsche!!!</string>
+    <string name="not_in_time">Die Zeit ist abgelaufen, versuchen Sie es erneut</string>
+    <string name="wrong_button">Hoppla, falscher Knopf</string>
+    <string name="correct_button_low_score">Sie haben es erraten, aber Sie waren zu langsam. Versuchen Sie es erneut</string>
+    <string name="score_limit">Sie müssen mehr als 50 Punkte erzielen, um das Level zu bestehen</string>
+    <string name="tab_title_main">Main</string>
+    <string name="tab_title_levels">Alle Ebenen</string>
+    <string name="reset_score">DATEN ZURÜCKSETZEN</string>
+    <string name="language">Sprache</string>
+    <string name="data_got_reset">Die Daten wurden zurückgesetzt</string>
+    <string name="lan_english">Englisch</string>
+    <string name="lan_german">Deutsche</string>
+    <string name="lan_spanish">Spanisch</string>
+    <string name="lan_french">Französisch</string>
+    <string name="lan_italian">Italienisch</string>
+    <string name="lan_albanian">Albanisch</string>
+    <string name="lan_change">Die Sprache wurde geändert, starten Sie die Anwendung neu</string>
+    <string name="next_level_not_unlocked">Nicht freigeschaltet</string>
+</resources>

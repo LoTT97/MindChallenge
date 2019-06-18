@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MenuActivity!</string>
+    <string name="app_name">Mind Challenge</string>
+    <string name="level_one_description">Tutti i numeri sono gli stessi</string>
+    <string name="level_two_description">Memorizza le carte colorate e poi fai clic su di esse rispettivamente</string>
+    <string name="level_three_description">Trova la risposta corretta. Hai solo un minuto</string>
+    <string name="level_four_description">Fai clic sul pulsante</string>
+    <string name="level_five_description">Fare clic sui numeri in ordine crescente a partire da 1. Il divario tra i numeri cambierà da 2 a 4 in 3 rounds tement</string>
+    <string name="level">\u0020\u0020\u0020\u0020\u0020Livello %s</string>
+    <string name="tap_to_continue">Tocca per continuare</string>
+    <string name="level_score">Punto: %s</string>
+    <string name="next_level">Livello successivo</string>
+    <string name="replay_level">Livello di riproduzione</string>
+    <string name="go_to_menu">Vai al menu</string>
+    <string name="congratulations">Congratulazioni!!!</string>
+    <string name="not_in_time">Il tempo è scaduto, riprova</string>
+    <string name="wrong_button">Oopss, pulsante sbagliato</string>
+    <string name="correct_button_low_score">Hai indovinato, ma eri troppo lento, riprova</string>
+    <string name="score_limit">Hai bisogno di segnare più di 50 per poter superare il livello</string>
+    <string name="tab_title_main">Principale</string>
+    <string name="tab_title_levels">Tutti i livelli</string>
+    <string name="reset_score">RESET DATI</string>
+    <string name="language">Linguaggio</string>
+    <string name="data_got_reset">I dati sono stati ripristinati</string>
+    <string name="lan_english">Inglese</string>
+    <string name="lan_german">Tedesco</string>
+    <string name="lan_spanish">Spagnolo</string>
+    <string name="lan_french">Francese</string>
+    <string name="lan_italian">Italiano</string>
+    <string name="lan_albanian">Albanese</string>
+    <string name="lan_change">La lingua è stata cambiata, riavviare l\'applicazione</string>
+    <string name="next_level_not_unlocked">Non sbloccato</string>
+</resources>

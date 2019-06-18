@@ -43,14 +43,17 @@
 
     <LinearLayout
         android:id="@+id/preLevelButtonsLinearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="440dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="50dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preLevelDescriptionTextView">
+        app:layout_constraintTop_toBottomOf="@+id/preLevelDescriptionTextView"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp">
 
 
         <ImageButton
@@ -59,7 +62,12 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/go_to_menu"
             android:visibility="visible"
-            app:srcCompat="@android:drawable/ic_media_previous" />
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/home_button"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"/>
 
         <ImageButton
             android:id="@+id/preLevelReplayButton"
@@ -67,7 +75,12 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/replay_level"
             android:visibility="visible"
-            app:srcCompat="@android:drawable/ic_menu_rotate" />
+            app:srcCompat="@drawable/replay_button"
+            android:paddingRight="10dp"
+            android:background="@color/colorWhite"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="15dp"/>
 
         <ImageButton
             android:id="@+id/preLevelNextLevelButton"
@@ -75,7 +88,12 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/next_level"
             android:visibility="visible"
-            app:srcCompat="@android:drawable/ic_media_play" />
+            android:background="@color/colorWhite"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingEnd="80dp"
+            android:paddingRight="80dp"
+            app:srcCompat="@drawable/next_level_button" />
 
     </LinearLayout>
 
